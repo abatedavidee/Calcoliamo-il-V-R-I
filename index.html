@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo Voltaggio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcola il Voltaggio</h1>
+        <div class="form-container">
+            <div class="input-group">
+                <label for="intensity">Intensità (I):</label>
+                <input type="number" id="intensity" required>
+                <label for="resistance">Resistenza (R):</label>
+                <input type="number" id="resistance" required>
+                <button type="button" onclick="calculateVoltage()">Calcola V</button>
+            </div>
+            <div class="input-group">
+                <label for="voltage">Voltaggio (V):</label>
+                <input type="number" id="voltage" required>
+                <label for="resistanceInt">Resistenza (R):</label>
+                <input type="number" id="resistanceInt" required>
+                <button type="button" onclick="calculateIntensity()">Calcola I</button>
+            </div>
+            <div class="input-group">
+                <label for="voltageR">Voltaggio (V):</label>
+                <input type="number" id="voltageR" required>
+                <label for="intensityR">Intensità (I):</label>
+                <input type="number" id="intensityR" required>
+                <button type="button" onclick="calculateResistance()">Calcola R</button>
+            </div>
+        </div>
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
